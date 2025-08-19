@@ -1,7 +1,7 @@
 {
-  "name": "Mesa Cheia Aranha",
-  "short_name": "MesaCheia",
-  "description": "Meu app PWA feito com React + Vite + TanStack Router",
+  "name": "Mesa Cheia Paraná",
+  "short_name": "MesaCheiaPR",
+  "description": "Mesa Cheia Paraná",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
