@@ -48,7 +48,7 @@ export function FoodVoting() {
 
   return (
     <div className="mb-4 pl-2 rounded-2xl">
-      <h1 className="text-lg text-gray-900 mb-2">Vote no seu prato favorito</h1>
+      <h1 className="text-sm text-gray-900 mb-2">Vote no seu prato favorito</h1>
       <div className="flex gap-2 mb-2 pb-3  overflow-x-auto scrollbar-hide">
         {categories.map((category) => (
           <Button
@@ -56,7 +56,7 @@ export function FoodVoting() {
             variant={selectedCategory === category ? 'default' : 'secondary'}
             size="sm"
             onClick={() => setSelectedCategory(category)}
-            className={`rounded-full px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap flex-shrink-0 ${
+            className={`rounded-md px-4 py-5 text-sm font-normal transition-colors whitespace-nowrap flex-shrink-0 ${
               selectedCategory === category
                 ? 'bg-gray-900 text-white hover:bg-gray-800'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -83,12 +83,12 @@ export function FoodVoting() {
               <div className="flex gap-x-2 items-center">
                 <Badge
                   variant="secondary"
-                  className="bg-gray-100 p-2 px-4 rounded-4xl text-gray-700 hover:bg-gray-100"
+                  className="bg-gray-100 p-2 px-4 rounded-4xl text-black hover:bg-gray-100"
                 >
                   {item.position}
                 </Badge>
 
-                <p className="text-sm text-gray-500">{item.status}</p>
+                <p className="text-sm text-gray-300">{item.status}</p>
               </div>
             </div>
           </div>
